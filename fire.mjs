@@ -18,11 +18,11 @@ $`sxiv capture_preview.jpg`
 
 // if preview, then take a preview picture
 while ( command = await question('enter command or item name: ')) {
-  if (command == "preview top") {
+  if (command == "preview top" || command == "pt") {
     $`./sony-preview.sh`
     continue
   } else
-    if (command == "preview side") {
+    if (command == "preview side" || command =="ps") {
       $`./canon-preview.sh`
       continue
     }
